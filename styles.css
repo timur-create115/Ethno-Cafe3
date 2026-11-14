@@ -492,7 +492,7 @@ svg[viewBox="0 0 24 24"] {
 }
 
 /* ---------- Улучшенная читаемость hero на мобильных ---------- */
-@media (max-width: 599px) {
+@media (max-width: 767px) {
   .hero {
     min-height: 0;
     align-items: flex-end;
