@@ -491,3 +491,72 @@ svg[viewBox="0 0 24 24"] {
   }
 }
 
+/* ---------- Улучшенная читаемость hero на мобильных ---------- */
+@media (max-width: 599px) {
+  .hero {
+    min-height: 0;
+    align-items: flex-end;
+  }
+
+  .hero__bg {
+    object-position: 58% center;
+  }
+
+  .hero__shade {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(12, 7, 4, .76) 0%,
+        rgba(12, 7, 4, .58) 58%,
+        rgba(12, 7, 4, .42) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(12, 7, 4, .34) 0%,
+        rgba(12, 7, 4, .42) 42%,
+        rgba(12, 7, 4, .88) 100%
+      );
+  }
+
+  .hero__content {
+    width: 100%;
+    padding-top: 42px;
+    padding-bottom: 30px;
+  }
+
+  .hero .eyebrow {
+    margin-bottom: 12px;
+    font-size: 11px;
+    letter-spacing: .22em;
+  }
+
+  .hero__title {
+    max-width: 100%;
+    font-size: clamp(48px, 12.5vw, 66px);
+    line-height: .98;
+    letter-spacing: -.02em;
+  }
+
+  .hero__lead {
+    max-width: 34ch;
+    margin-top: 10px;
+    font-size: clamp(21px, 5.8vw, 27px);
+    line-height: 1.18;
+  }
+
+  .hero .divider {
+    margin-block: 18px;
+  }
+
+  .hero__text {
+    max-width: 38ch;
+    margin-bottom: 18px;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .hero__actions {
+    gap: 9px;
+  }
+}
+
